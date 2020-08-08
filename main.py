@@ -2,7 +2,7 @@ from flask import Flask
 from flask import jsonify
 
 app = Flask(__name__)
-
+#added comment
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
@@ -14,7 +14,7 @@ def name(value):
     return jsonify(val)
 
 @app.route('/bob')   
-def bob():
+def name(value):
     val = {"value": "bob"}
     return jsonify(val)
 
